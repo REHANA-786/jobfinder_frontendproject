@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple intrst</title>
+    <script>
+        function si(){
+           var p,t,r,si;
+           p=document.getElementById("first").value;
+           t=document.getElementById("second").value;
+           r=document.getElementById("third").value;
+           si=parseInt((p*t*r)/100);
+           document.write(si);
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label>principle amount</label><input type="text" id="first"><br><br>
+        <label>Time period</label><input type="text" id="second"><br><br>
+        <label>Rate of intrest</label><input type="text" id="third"><br><br>
+        <input type="submit" value="result" onclick="si()">
+    </form>
+</body>
+</html>
